@@ -30,7 +30,7 @@ RSpec.describe 'Dish show page' do
     DishIngredient.create!(dish: ravioli, ingredient: cheese)
     DishIngredient.create!(dish: ravioli, ingredient: spinach)
     DishIngredient.create!(dish: ravioli, ingredient: pasta)
-    
+
     visit "dishes/#{ravioli.id}"
 
     expect(page).to have_content("Total Calories: 235")
